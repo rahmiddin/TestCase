@@ -12,7 +12,8 @@
  1. git clone https://github.com/rahmiddin/TestCase.git
  2. cd TestCase
  3. pip install -r requirements.txt
- 4. python manage.py runserver
+ 4. cd Shop
+ 5. python manage.py runserver
 ```
 
 Доступ
