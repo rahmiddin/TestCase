@@ -10,9 +10,11 @@ class ShopAdmin(admin.ModelAdmin):
 
 @admin.register(Street)
 class StreetAdmin(admin.ModelAdmin):
-    fields = ['name', 'city']
+    fields = ['name', 'city', 'slug']
+    prepopulated_fields = {'slug': ("name", )}
 
 
 @admin.register(City)
 class CityAdmin(admin.ModelAdmin):
-    fields = ['name', ]
+    fields = ['name', 'slug']
+    prepopulated_fields = {'slug': ("name", )}
